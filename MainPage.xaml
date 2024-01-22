@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiApp1.MainPage">
+
+    <ScrollView>
+        <VerticalStackLayout
+            Padding="30,0"
+            Spacing="25">
+            <Label TextColor="white" HorizontalTextAlignment="Center" FontSize="30">Welcome to my frst app Using dotnet.Maui</Label>
+
+            <Image Source="dotnet_maui.png"
+                   Aspect="AspectFill"
+                   HeightRequest="220"
+                   WidthRequest="220"
+                   HorizontalOptions="Center">
+            <Image.Clip>
+                <EllipseGeometry Center="220,250"
+                         RadiusX="220"
+                         RadiusY="220" />
+            </Image.Clip>
+            <Image.Shadow>
+                <Shadow Brush="Black"
+                Offset="10,10"
+                Opacity="0.8" />
+            </Image.Shadow>
+            </Image>
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
